@@ -1,5 +1,5 @@
 #! /bin/bash
-printf "Installing RDP Be Patience... " >&2
+printf "salam !!! ki dayr cava    lmohim sbr xwiya hadchi db ykhdm" >&2
 {
 sudo useradd -m ibrahim
 sudo adduser ibrahim sudo
