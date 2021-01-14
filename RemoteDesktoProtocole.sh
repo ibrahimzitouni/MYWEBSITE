@@ -5,6 +5,8 @@ sudo useradd -m ibrahim
 sudo adduser ibrahim sudo
 echo 'ibrahim:1234' | sudo chpasswd
 sed -i 's/\/bin\/sh/\/bin\/bash/g' /etc/passwd
+sudo add-apt-repository https://www.mediahuman.com/packages/ubuntu
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com --recv-keys 7D19F1F3
 sudo apt-get update
 sudo apt update
 wget https://dl.google.com/linux/direct/chrome-remote-desktop_current_amd64.deb
@@ -19,6 +21,7 @@ wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo dpkg --install google-chrome-stable_current_amd64.deb
 sudo apt install --assume-yes --fix-broken
 sudo apt install nautilus nano -y 
+sudo apt-get install youtube-downloader
 sudo adduser ibrahim chrome-remote-desktop
 } &> /dev/null &&
 printf "\nSetup Complete " >&2 ||
